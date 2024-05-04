@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang = "vi" style="height: 2000px;">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Shop Motorbike</title>
+        <link rel="stylesheet" type="text/css" href="css/csstoanphan.css">
+        <link rel="stylesheet" type="text/css" href="css/csstrangchu.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <link href="css/all.min.css" rel="stylesheet"> 
+        <style>
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                }
+
+                table, th, td {
+                border: 1px solid black;
+                padding: 8px;
+                }
+
+                th {
+                background-color: #f2f2f2;
+                }
+        </style>
+
+        
+    </head>
+    <body>
+        <header style="height: 70px; position: sticky; margin-bottom: 0; padding-bottom: 0;">
+            <div class = "tieude" style="height: 100%; width: 100%;">
+                <div class="khachhang">
+                    <ul>
+                        <li>
+                            <a href="">Các vấn đề thường gặp |</a>
+                        </li>
+                        <li>
+                            <a href="">Góp ý | </a>
+                        </li>
+                        <li>
+                            <a href=""></i>Chăm sóc khách hàng | </a>
+                        </li>
+                        <li>
+                            <a href="">Thành viên | </a>
+                        </li>
+                        <li>
+                            <a href="dangnhap.html">Log in / sign in  <i class="fa fa-user"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class = "logo"> 
+                    <a href=""> <img src="img/motologo.jpg" alt=""></a>
+                    <a href="" ><img src="img/logo_new.png" alt="" style="width: 20% ;"></a>
+                     
+                </div>
+            </div>
+        </header>
+       
+            <nav style="z-index: 10;">
+                <div id = "menu"> 
+                    <ul>
+                        <li>
+                            <a href="index.html">Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="">Danh mục xe</a>
+                            <ul>
+                                <li><a href="suzuki.html">Xe Suzuki</a><img class ="imglogoxe" src="img/suzukilgopng.png" alt=""></li>
+                                <li><a href="yamaha.html">Xe Yamaha <img class ="imglogoxe" src="img/yamahalogo.png" alt=""></a></li>
+                                <li><a href="honda.html">Xe Honda</a> <img  class ="imglogoxe" src="img/hondalogo.png" alt=""></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" style="padding-top: 5px;">Danh mục phụ kiện</a>
+                            <ul >
+                                <li><a href="">Phụ kiện trang trí</a></li>
+                                <li><a href="">Phụ tùng thay thế</a></li>
+                                <li><a href="">Nhớt xe máy</a></li>
+                                <li><a href="">Phụ kiện biker</a> </li>
+                               
+                                
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Top bán chạy</a>
+                        </li>
+                        <li><a href="">Tin tức</a>
+                           <ul>
+                              <li><a href="">Dòng xe mới</a></li>
+                              <li><a href="">Động cơ mới</a></li>
+                              <li><a href="">Doanh nghiệp</a></li>
+                           </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <article style="z-index: 0;">
+                <section>
+                    <div class = "wrapper" >
+                        <div class="slide" >
+                            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel"  style="z-index: 0; ">
+                                <ol class="carousel-indicators">
+                                  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                                  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                                  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="img/hondabanner.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                      <h2 class="fontf">Chinh phục mọi cung đường</h2>
+                                      <h3 class="fontf">Sức mạnh của động cơ giúp bạn băng qua mọi cung đường dù là khó khăn nhất.</h3>
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="img/hondabanner1.png" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                      <h2 class="fontf">Rực cháy với dòng xe mới</h2>
+                                      <h3 class="fontf">Mang đến cho bạn một cảm giác bức phá.</3>
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="img/xenoibat/xe2.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                      <h2 class="fontf" style="color: black; ">Khám phá tận cùng của thế giới</h5>
+                                      <h3  class="fontf" style="color: black;">Là người bạn đồng hành vững chắc.</h3>
+                                    </div>
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Next</span>
+                                </button>
+                              </div>
+                        </div>
+                       
+                    </div>
+                </section>
+                <section >
+                    <div class="wrapper2">
+                       
+                        <div class="lifo">
+                            <div class="line"></div>
+                            <div class="info"><p>Phụ tùng - Phụ kiện</p></div>
+                        </div>
+                            <div class="menusp">
+                                <ul class="listsp">
+                                    <li>
+                                        <div class="product-item">
+                                            <div class="product-top">
+                                                <a href="nhotxechitiet.html" class="imgclass"><img src="img/phukientrai.jpg" alt=""></a>
+                                                <a href="nhotxechitiet.html" class="buynow">Mua ngay</a>
+                                            </div>
+                                            <div class="product-info">
+                                                <a href="" class="product-cat">Phuộc xe cao cấp</a>
+                                                <a href="" class="product-name">111</a>
+                                                <div class="product-price">750,000 vnd</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="product-item">
+                                            <div class="product-top">
+                                                <a href="nhotxechitiet1.html" class="imgclass"><img src="img/phukienphai2.jpg" alt=""></a>
+                                                <a href="nhotxechitiet.html" class="buynow">Mua ngay</a>
+                                            </div>
+                                            <div class="product-info">
+                                                <a href="" class="product-cat">Vỏ tay cầm</a>
+                                                <a href="" class="product-name">Jz</a>
+                                                <div class="product-price">180,000 vnd</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="product-item">
+                                            <div class="product-top">
+                                                <a href="chitietsanpham3.html" class="imgclass"><img src="img/guong.jpg" alt=""></a>
+                                                <a href="chitietsanpham3.html" class="buynow">Mua ngay</a>
+                                            </div>
+                                            <div class="product-info">
+                                                <a href="" class="product-cat">Gương xe</a>
+                                                <a href="" class="product-name">Plus Jaso MA2 </a>
+                                                <div class="product-price">250,000 vnd</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="product-item">
+                                            <div class="product-top">
+                                                <a href="" class="imgclass"><img src="img/non.jfif" alt=""></a>
+                                                <a href="" class="buynow">Mua ngay</a>
+                                            </div>
+                                            <div class="product-info">
+                                                <a href="" class="product-cat">Nón biker</a>
+                                                <a href="" class="product-name">Mẫu 1</a>
+                                                <div class="product-price">500,000 vnd</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                  
+                                </ul>
+                            </div>
+                            <div class="lifo2">
+                                <div class="line2"></div>
+                                <div class="info2"><p>Thông tin về các loại nhớt</p></div>
+                            </div>
+                            
+
+
+                            <table>
+                            <tr>
+                                <th>Tên Sản Phẩm</th>
+                                <th>Loại Nhớt</th>
+                                <th>Đặc Tính</th>
+                                <th>Ứng Dụng</th>
+                            </tr>
+                            <tr>
+                                <td>Mannol 3</td>
+                                <td>Fully Synthetic</td>
+                                <td>- Độ nhớt cao<br>- Khả năng chịu nhiệt tốt<br>- Bảo vệ động cơ</td>
+                                <td>Đua xe, sử dụng trong điều kiện nhiệt độ và áp suất cao</td>
+                            </tr>
+                            <tr>
+                                <td>Senfineco</td>
+                                <td>Fully Synthetic</td>
+                                <td>- Hiệu suất cao<br>- Bảo vệ động cơ tối ưu<br>- Tiết kiệm nhiên liệu</td>
+                                <td>Xe du lịch, xe thể thao</td>
+                            </tr>
+                            <tr>
+                                <td>Mannol 4</td>
+                                <td>Synthetic Blend</td>
+                                <td>- Bảo vệ động cơ<br>- Tiết kiệm nhiên liệu<br>- Độ nhớt ổn định</td>
+                                <td>Phổ biến cho nhiều loại xe</td>
+                            </tr>
+                            <tr>
+                                <td>Motul</td>
+                                <td>Fully Synthetic</td>
+                                <td>- Độ nhớt cao<br>- Bảo vệ động cơ tối ưu<br>- Giảm ma sát</td>
+                                <td>Xe đua, xe thể thao, xe hạng sang</td>
+                            </tr>
+                            </table>
+                        </div>
+
+                        <div class="lifo2">
+                            <div class="line2"></div>
+                            <div class="info2"><p>Cảnh báo nhớt giả</p></div>
+                        </div>
+                        <div class="content" style="text-align: justify;
+                        ">
+                            <p >
+                                Trong thời đại công nghệ phát triển như hiện nay, việc sử dụng nhớt giả đã trở thành một vấn đề nghiêm trọng trong ngành công nghiệp dầu mỡ và cả trong lĩnh vực ô tô. Dung dịch nhớt giả không chỉ ảnh hưởng đến hiệu suất hoạt động của động cơ mà còn đe dọa đến an toàn và bảo vệ môi trường.
+
+                                Tình trạng sử dụng nhớt giả hiện nay thường xuất phát từ nhu cầu tiết kiệm chi phí của một số người tiêu dùng và doanh nghiệp. Nhớt giả thường được sản xuất và phân phối mà không tuân thủ các tiêu chuẩn chất lượng cần thiết, làm giảm khả năng bảo vệ và bôi trơn cho động cơ. Việc sử dụng nhớt giả có thể dẫn đến hao mòn nhanh chóng của các bộ phận trong động cơ, gây ra hỏng hóc và sự cố không mong muốn.
+                                
+                                Để giải quyết vấn đề này, cần có sự tăng cường kiểm tra và giám sát từ phía chính phủ, các cơ quan quản lý và ngành công nghiệp. Ngoài ra, việc nâng cao nhận thức của người tiêu dùng về tác hại của việc sử dụng nhớt giả cũng là một phần quan trọng trong việc ngăn chặn tình trạng này. Chỉ thông qua sự hợp tác và nhận thức chung của cả cộng đồng, chúng ta mới có thể ngăn chặn và giải quyết được tình trạng dung nhớt giả hiện nay.</p>
+                            <div class="content-img" style="text-align: center;" >
+                                <img src="img/nhotgia.jpg" alt="">
+                                <p style="font-size: 18px; font-style: italic; opacity: calc(80%);">nhớt giả tràn lan</p>
+
+                            </div>
+                        </div>
+                        <div class="content" style="text-align: justify;
+                        ">
+                            <p >
+                                Dầu nhớt của BKey Shop là sự lựa chọn đáng tin cậy và chất lượng cao cho việc bảo dưỡng và bảo vệ động cơ xe của bạn. Với cam kết đảm bảo chất lượng và hiệu suất, dầu nhớt của Cửa Hàng F không chỉ cung cấp sự bôi trơn hiệu quả mà còn bảo vệ động cơ khỏi sự hao mòn và tổn thương do ma sát và nhiệt độ.
+
+Sản phẩm nhớt của BKey Shop được chế tạo từ các thành phần chất lượng cao và tuân thủ các tiêu chuẩn công nghiệp nghiêm ngặt, đảm bảo mang lại hiệu suất tối ưu và tuổi thọ kéo dài cho động cơ của bạn. Không chỉ là một giải pháp bôi trơn, dầu nhớt của Bkey Shop còn được thiết kế để đáp ứng các yêu cầu đặc biệt của từng loại động cơ và điều kiện lái xe, từ xe hạng nhẹ đến xe công nghiệp.
+
+Với sự cam kết về chất lượng và dịch vụ, dầu nhớt của Bkey Shop không chỉ là một sản phẩm mà còn là một đối tác đáng tin cậy cho sự bảo vệ và duy trì hiệu suất của chiếc xe của bạn suốt quãng đường dài.</p>
+                            <div class="content-img" style="text-align: center;" >
+                                <img src="img/Free_Sample_By_Wix (1).jpg" alt="">
+                                <p style="font-size: 18px; font-style: italic; opacity: calc(80%);">Cung cấp nhớt chính hãng</p>
+                                <img src="img/tintuong.webp" alt="">
+
+                            </div>
+                        </div>
+
+                       
+                     
+                   
+                </section>
+            </article>
+            <footer class="footer">
+                <div class="grid">
+                    <div class="grid_row">
+                        <div class="grid-row2-4">
+                            <h3 class="footer_heading">Thông tin liên hệ</h3>
+                            <ul class="footer_list">
+                                <li class="footer_item">
+                                    <i class="fas fa-envelope"></i>Email: thachthien0912@gmai.com
+                                </li>
+                                <li class="footer-item">
+                                  <i class="fas fa-phone"></i>Hotline: 0345533870
+                                </li>
+                              
+                            </ul>
+                        </div>
+                        <div class="grid-row2-4">
+                            <h3 class="footer_heading">Thông tin liên hệ</h3>
+                            <ul class="footer_list">
+                               <li class="footer_item">
+                                  <i class="fas fa-map-marker-alt"></i>223 Nguyễn Thái Sơn , phường 4 , Gò Vấp , TP-HCM
+                                </li>
+                                <li class="footer-item">
+                                  <i class="fas fa-map-marker-alt"></i>129 Lý Chính Thắng , phường Võ Thị Sáu, Quận 3, TP-HCM 
+                                </li>
+                                <li class="footer-item">
+                                    <i class="fas fa-map-marker-alt"></i>585 Điện Biên Phủ , phường 25, Quận Bình Thạnh, TP-HCM 
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid-row2-4">
+                            <h3 class="footer_heading">Mạng xã hội</h3>
+                            <ul class="footer_list">
+                                <li class="footer_item">
+                                     <a href="https://www.facebook.com/282gaming/" class="footer_item_link">
+                                        <i class="fab fa-facebook-f"></i>
+                                        Facebook</a>
+                                    </li>
+                                    <li class="footer-item">
+                                     <a href="https://www.tiktok.com/vi-VN/" class="footer_item_link"><i class="fab fa-tiktok"></i>Tiktok</a>
+                                </li>
+                                <li class="footer-item">
+                                     <a href="" class="footer_item_link"><i class="fab fa-telegram-plane"></i>Telegram </a>
+                                </li>
+                             </ul>
+                        </div>
+                        <div class="grid-row2-4">
+                            <h3 class="footer_heading">Theo dõi</h3>
+                            <ul class="footer_list">
+                                <li class="footer_item">
+                                    <i class="fas fa-box-open"></i><a href="" class="footer_item_link">Đơn hàng</a>
+                                </li>
+                                <li class="footer-item">
+                                     <a href="" class="footer_item_link"><i class="fas fa-archive"></i>Sản phẩm mới</a>
+                                </li>
+                             </ul>
+                        </div>
+                        <div class="grid-row2-4">
+                            <h3 class="footer_heading">Lái xe an toàn</h3>
+                            <ul class="footer_list">
+                                <li class="footer_item">
+                                     <a href="" class="footer_item_link"><i class="fas fa-bookmark"></i>Hướng dẫn lái xe an toàn</a>
+                                </li>
+                                <li class="footer-item">
+                                     <a href="" class="footer_item_link">Phụ kiện hỗ trợ</a>
+
+                                </li>
+                             </ul>
+                        </div>
+                    </div>
+                    <div class="grid_row2">
+                        <div class="footer_rowlast">
+                            <p class="footer_last">Chịu Trách Nhiệm Quản Lý Nội Dung: Lê Bảo Kiện - Điện thoại liên hệ: 0345533870 </p>
+                        </div>
+                        <div class="footer_rowlast">
+                        <p class="footer_last">   Mã số doanh nghiệp: 22698751 do Sở Kế hoạch & Đầu tư TP Hồ Chí Minh cấp lần đầu ngày 10/02/2024</p>
+                    </div>
+                    <div class="footer_rowlast">
+                        <p class="footer_last">© 2024 - Bản quyền thuộc về Công ty BKey</p>
+                    </div>
+                     
+
+                    </div>
+                </div>
+                
+
+            </footer>
+            
+       
+    </body>
+</html>

@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang = "vi" style="height: 2000px;">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Shop Motorbike</title>
+        <link rel="stylesheet" type="text/css" href="css/csstoanphan.css">
+        <link rel="stylesheet" type="text/css" href="css/csstrangchu.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/chitietsanpham.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <link href="css/all.min.css" rel="stylesheet"> 
+        <style>
+            .container-fluid .row .menu2 ul li a h3{
+    border: 2px solid;
+    
+}
+
+table {
+                width: 100%;
+                border-collapse: collapse;
+                }
+
+                table, th, td {
+                border: 1px solid black;
+                padding: 8px;
+                }
+
+                th {
+                background-color: #f2f2f2;
+                }
+
+            /* CSS để tạo giao diện */
+            body {
+                font-family: "Times New Roman", Times, serif;
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            .product {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                margin-bottom: 20px;
+            }
+            .product-images {
+                flex: 1;
+                margin-right: 20px;
+            }
+            .product-image {
+                margin-bottom: 10px;
+            }
+            .product-image img {
+                max-width: 100%;
+                height: auto;
+                cursor: pointer; /* Sử dụng cursor pointer cho hình ảnh */
+            }
+            .thumbnails {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+            }
+            .thumbnail {
+                margin-right: 10px;
+            }
+            .thumbnail img {
+                width: 60px;
+                height: auto;
+                cursor: pointer;
+            }
+            .product-info {
+                flex: 2;
+            }
+            .product-title {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+            .product-price {
+                font-size: 20px;
+                color: #f00; /* Màu đỏ */
+                margin-bottom: 10px;
+            }
+            .product-description {
+                margin-bottom: 20px;
+            }
+            .btn {
+                padding: 10px 20px;
+                background-color: #007bff; /* Màu xanh dương */
+                color: #fff;
+                text-decoration: none;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            /* CSS để hiển thị ảnh lớn */
+            .overlay {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.9); /* Màu đen với độ mờ */
+                z-index: 9999;
+                justify-content: center;
+                align-items: center;
+            }
+            .overlay img {
+                max-width: 80%;
+                max-height: 80%;
+            }
+            .container-fluid .row .menu2 ul li a h3{
+    border: 2px solid;
+    
+}
+
+    .row #menu1 > li {
+        position: relative;
+        list-style-type: none;
+        display: inline-flex;
+        margin-left: 150px;
+    }
+
+    .menu2 li {
+        display: block;
+    }
+
+    .menu2 a {
+        display: block;
+    }
+
+    .menu2 a:hover {
+        color: red;
+        background-color: yellow;
+        border: 2px solid ;
+        text-decoration: none;
+    }
+
+    .menu2 a h2 {
+        margin: 10px 0;
+    }
+
+    #menu1 #sp:hover .menu2 {
+        display: block;
+    }
+    .row .col-2 img:hover{
+        
+        height: 250px;
+        width: 250px;
+        
+    }
+    .row .col-2 #ad{ 
+        padding: 10px;
+        background-color: rgb(234, 107, 17);
+        color: rgb(239, 239, 232);
+        border-radius: 40px;
+    }
+   #sd{
+    display: inline-block;
+    padding: 5px;
+    border: 2px solid;
+   }
+   #sd:hover{
+    color: yellow;
+   }
+   h5:hover{
+    color: red;
+   }
+
+        </style>
+        
+    </head>
+    <body>
+        <header style="height: 70px; position: sticky; margin-bottom: 0; padding-bottom: 0;">
+            <div class = "tieude" style="height: 100%; width: 100%;">
+                <div class="khachhang">
+                    <ul>
+                        <li>
+                            <a href="">Các vấn đề thường gặp |</a>
+                        </li>
+                        <li>
+                            <a href="">Góp ý | </a>
+                        </li>
+                        <li>
+                            <a href=""></i>Chăm sóc khách hàng | </a>
+                        </li>
+                        <li>
+                            <a href="">Thành viên | </a>
+                        </li>
+                        <li>
+                            <a href="dangnhap.html">Log in / sign in  <i class="fa fa-user"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class = "logo"> 
+                    <a href=""> <img src="img/motologo.jpg" alt=""></a>
+                    <a href="" ><img src="img/logo_new.png" alt="" style="width: 20% ;"></a>
+                     
+                </div>
+            </div>
+        </header>
+       
+            <nav style="z-index: 10;">
+                <div id = "menu"> 
+                    <ul>
+                        <li>
+                            <a href="index.html">Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="">Danh mục xe</a>
+                            <ul>
+                                <li><a href="suzuki.html">Xe Suzuki</a><img class ="imglogoxe" src="img/suzukilgopng.png" alt=""></li>
+                                <li><a href="yamaha.html">Xe Yamaha <img class ="imglogoxe" src="img/yamahalogo.png" alt=""></a></li>
+                                <li><a href="honda.html">Xe Honda</a> <img  class ="imglogoxe" src="img/hondalogo.png" alt=""></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" style="padding-top: 5px;">Danh mục phụ kiện</a>
+                            <ul >
+                           
+                                <li><a href="phutung.html">Phụ tùng thay thế</a></li>
+                                <li><a href="nhotxe.html">Nhớt xe máy</a></li>
+                             
+                               
+                                
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Top bán chạy</a>
+                        </li>
+                        <li><a href="">Tin tức</a>
+                           <ul>
+                              <li><a href="">Dòng xe mới</a></li>
+                              <li><a href="">Động cơ mới</a></li>
+                              <li><a href="">Doanh nghiệp</a></li>
+                           </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <article style="z-index: 0;">
+                <section>
+                    <div class = "wrapper" >
+                        <div class="slide" >
+                            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel"  style="z-index: 0; ">
+                                <ol class="carousel-indicators">
+                                  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                                  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                                  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="img/hondabanner.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                      <h2 class="fontf">Chinh phục mọi cung đường</h2>
+                                      <h3 class="fontf">Sức mạnh của động cơ giúp bạn băng qua mọi cung đường dù là khó khăn nhất.</h3>
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="img/hondabanner1.png" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                      <h2 class="fontf">Rực cháy với dòng xe mới</h2>
+                                      <h3 class="fontf">Mang đến cho bạn một cảm giác bức phá.</3>
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="img/xenoibat/xe2.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                      <h2 class="fontf" style="color: black; ">Khám phá tận cùng của thế giới</h5>
+                                      <h3  class="fontf" style="color: black;">Là người bạn đồng hành vững chắc.</h3>
+                                    </div>
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Next</span>
+                                </button>
+                              </div>
+                        </div>
+                       
+                    </div>
+                </section>
+                <div class="control">
+                    
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-5">
+                        <br>
+                       
+                        <div style="border: 2px solid;box-shadow: 3px 3px 3px rgb(86, 82, 82);">
+                        <img src="img/nhotxe2.jpg" style="height: 100%;width: 100%; padding: 20px;">
+                        <img src="img/nhotchitiet2.jpg" alt="" style="height: 170px;width: 170px; padding:20px;margin-left: 40px;">
+                        <img src="img/nhotchitiet2.1.jpg" alt="" style="height: 170px;width: 170px; padding: 20px;margin-left: 40px;">
+                     
+                        <hr>
+                       
+                        <ul  style="list-style-type: none;">
+                            <li>- Chi tiết:</li>
+                            <li>+ Xuất xứ : Japan</li>
+                            <li>+ Công ty: motul </li>
+                            <li>+ công dụng: Nhớt xe máy</li>
+                         
+                        </ul>
+                        <a href="">Read more...</a>
+                    </div>
+                    </div>
+                    <div class="col-5"  >
+                        
+                        <h3>Nhớt xe Motul 300v</h3>
+                        <h4 style="color: red;">Vi deo mô tả | Đánh giá| <span style="color: yellow;">&#9733;&#9733;&#9733;&#9733;&#9734;</span></h4>
+                        <p>Mã sản Phẩm: BLV8USP01</p>
+                        <h2 style="text-decoration: line-through;">Giá: 459,000,000VNĐ</h2>
+                        <h2 style="color: red;">Khuyến Mãi: 359,000,000 VNĐ</h2>
+                        <ul>
+                            
+                        </ul>
+                        <p>Giá và khuyến mãi dự kiến áp dụng đến 23:59 31/03/2024</p>
+                        
+                       <h5>Số Lượng: </h5>
+                       <input type="number" placeholder="number">
+                       <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">Mua Ngay</button>
+        
+                       <p style=" border: 2px solid;width: 50px;background-color: rgb(60, 211, 241); color: white; border-radius: 5px;">Share</p>
+                       <div>
+                       <div style="width: 400px;border: 2px solid rgb(89, 183, 220)">
+                            <ul>
+                             
+                                <li style="list-style-type: none;"alt="" style="border-radius: 50%; height: 30px; width: 30px;"> Bảo hành trọn gói 1 năm</li>
+                                <hr>
+                                <li style="list-style-type: none;"alt="" style="border-radius: 50%; height: 30px; width: 30px;"> CSKH:0345533870</li>
+        
+                            </ul>
+                        </div>
+                   
+                       
+        
+                    </div>
+        
+                    <div class="col-2"></div>
+                </div>
+        
+               
+            </div>
+
+                <!-- Overlay để hiển thị ảnh lớn -->
+                <div class="overlay" onclick="closeOverlay()">
+                    <img id="overlayImage" src="" alt="Overlay Image">
+                </div>
+                <div class="former2">
+                    <div class="product-specs">
+                        <h2>Thông số kỹ thuật sản phẩm</h2>
+                        <table>
+                            <tr>
+                                <th>Tên Sản Phẩm</th>
+                                <th>Loại Nhớt</th>
+                                <th>Đặc Tính</th>
+                                <th>Ứng Dụng</th>
+                            </tr>
+                            <tr>
+                                <td>Mannol 3</td>
+                                <td>Fully Synthetic</td>
+                                <td>- Độ nhớt cao<br>- Khả năng chịu nhiệt tốt<br>- Bảo vệ động cơ</td>
+                                <td>Đua xe, sử dụng trong điều kiện nhiệt độ và áp suất cao</td>
+                            </tr>
+                            <tr>
+                                <td>Senfineco</td>
+                                <td>Fully Synthetic</td>
+                                <td>- Hiệu suất cao<br>- Bảo vệ động cơ tối ưu<br>- Tiết kiệm nhiên liệu</td>
+                                <td>Xe du lịch, xe thể thao</td>
+                            </tr>
+                            <tr>
+                                <td>Mannol 4</td>
+                                <td>Synthetic Blend</td>
+                                <td>- Bảo vệ động cơ<br>- Tiết kiệm nhiên liệu<br>- Độ nhớt ổn định</td>
+                                <td>Phổ biến cho nhiều loại xe</td>
+                            </tr>
+                            <tr>
+                                <td>Motul</td>
+                                <td>Fully Synthetic</td>
+                                <td>- Độ nhớt cao<br>- Bảo vệ động cơ tối ưu<br>- Giảm ma sát</td>
+                                <td>Xe đua, xe thể thao, xe hạng sang</td>
+                            </tr>
+                            </table>
+                    </div>
+                </div>
+                
+            </article>
+            <footer class="footer">
+                <div class="grid">
+                    <div class="grid_row">
+                        <div class="grid-row2-4">
+                            <h3 class="footer_heading">Thông tin liên hệ</h3>
+                            <ul class="footer_list">
+                                <li class="footer_item">
+                                    <i class="fas fa-envelope"></i>Email: thachthien0912@gmai.com
+                                </li>
+                                <li class="footer-item">
+                                  <i class="fas fa-phone"></i>Hotline: 0345533870
+                                </li>
+                              
+                            </ul>
+                        </div>
+                        <div class="grid-row2-4">
+                            <h3 class="footer_heading">Thông tin liên hệ</h3>
+                            <ul class="footer_list">
+                               <li class="footer_item">
+                                  <i class="fas fa-map-marker-alt"></i>223 Nguyễn Thái Sơn , phường 4 , Gò Vấp , TP-HCM
+                                </li>
+                                <li class="footer-item">
+                                  <i class="fas fa-map-marker-alt"></i>129 Lý Chính Thắng , phường Võ Thị Sáu, Quận 3, TP-HCM 
+                                </li>
+                                <li class="footer-item">
+                                    <i class="fas fa-map-marker-alt"></i>585 Điện Biên Phủ , phường 25, Quận Bình Thạnh, TP-HCM 
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid-row2-4">
+                            <h3 class="footer_heading">Mạng xã hội</h3>
+                            <ul class="footer_list">
+                                <li class="footer_item">
+                                     <a href="https://www.facebook.com/282gaming/" class="footer_item_link">
+                                        <i class="fab fa-facebook-f"></i>
+                                        Facebook</a>
+                                    </li>
+                                    <li class="footer-item">
+                                     <a href="https://www.tiktok.com/vi-VN/" class="footer_item_link"><i class="fab fa-tiktok"></i>Tiktok</a>
+                                </li>
+                                <li class="footer-item">
+                                     <a href="" class="footer_item_link"><i class="fab fa-telegram-plane"></i>Telegram </a>
+                                </li>
+                             </ul>
+                        </div>
+                        <div class="grid-row2-4">
+                            <h3 class="footer_heading">Theo dõi</h3>
+                            <ul class="footer_list">
+                                <li class="footer_item">
+                                    <i class="fas fa-box-open"></i><a href="" class="footer_item_link">Đơn hàng</a>
+                                </li>
+                                <li class="footer-item">
+                                     <a href="" class="footer_item_link"><i class="fas fa-archive"></i>Sản phẩm mới</a>
+                                </li>
+                             </ul>
+                        </div>
+                        <div class="grid-row2-4">
+                            <h3 class="footer_heading">Lái xe an toàn</h3>
+                            <ul class="footer_list">
+                                <li class="footer_item">
+                                     <a href="" class="footer_item_link"><i class="fas fa-bookmark"></i>Hướng dẫn lái xe an toàn</a>
+                                </li>
+                                <li class="footer-item">
+                                     <a href="" class="footer_item_link">Phụ kiện hỗ trợ</a>
+
+                                </li>
+                             </ul>
+                        </div>
+                    </div>
+                    <div class="grid_row2">
+                        <div class="footer_rowlast">
+                            <p class="footer_last">Chịu Trách Nhiệm Quản Lý Nội Dung: Lê Bảo Kiện - Điện thoại liên hệ: 0345533870 </p>
+                        </div>
+                        <div class="footer_rowlast">
+                        <p class="footer_last">   Mã số doanh nghiệp: 22698751 do Sở Kế hoạch & Đầu tư TP Hồ Chí Minh cấp lần đầu ngày 10/02/2024</p>
+                    </div>
+                    <div class="footer_rowlast">
+                        <p class="footer_last">© 2024 - Bản quyền thuộc về Công ty BKey</p>
+                    </div>
+                     
+
+                    </div>
+                </div>
+                
+
+            </footer>
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1><img src="img/Free_Sample_By_Wix (1).jpg" alt="" style="height: 50px;width: 50px; border-radius: 50%;">Phiếu Đăng Ký Mua</h1>
+                            <button class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                            <div class="modal-body">
+                                <form action="" id="myform">
+                                    <div class="row">
+                                        <div class="col-5"><label for="" style="font-size: 20px;">Tên Khách Hàng:</label></div>
+                                        <div class="col-7"> <input type="text" class="form-control" id="ip_kh" placeholder="Le Bao Kien">
+                                        <p id="loi_kh">(*)</p>
+                                        </div>            
+                                     </div>
+                                     <div class="row">
+                                        <div class="col-5"><label for="" style="font-size: 20px;">Số Điện Thoại:</label></div>
+                                        <div class="col-7"> <input type="text" class="form-control" id="ip_dt" placeholder="0XXXXXXXXX">
+                                        <p id="loi_dt">(*)</p>
+                                        </div>            
+                                     </div>
+            
+
+                            <div class="row">
+                                <div class="col-5"><label for="" style="font-size: 20px;">Chi nhánh</label></div>
+                                <div class="col-7"> 
+                                    <select name="lsp" id="ip_lsp" class="form-control">
+                                        <option value="1">223 Nguyễn Thái Sơn, phường 4, GV_HCM</option>
+                                        <option value="1">129 Lý Chính Thắng ,phường VTS, Q3 HCM</option>
+                                        <option value="1">585 Điện Biên Phủ , phường 25, BT HCM</option>
+                                      
+            
+                                    </select>
+                               
+                                </div>            
+                            </div>   
+                            <br>
+                            <br>
+                            <div class="row">
+                                <div class="col-5"><label for="" style="font-size: 20px;">Số Lượng :</label></div>
+                                <div class="col-7"> <input type="number" class="form-control" id="ip_sl" placeholder="">
+                                <p id="loi_sl">(*)</p>
+                                </div>            
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-5"><label for="" style="font-size: 20px;">Ngày Mua Hàng:</label></div>
+                                <div class="col-7"> <input type="date" class="form-control" id="ip_nm" placeholder="dd/mm/yyyy">
+                                <p id="loi_nm">(*)</p>
+                                </div>            
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-5"><label for="" style="font-size: 20px;">Hình Thức Thanh Toán:</label></div>
+                                <div class="col-7"> 
+                                    <div  style="font-size: 20px;">
+                                    <input type="radio" name="123"> Thẻ Ngân Hàng <br>
+                                    <input type="radio" name="123"> Chuyển Khoản  <br>
+                                    <input type="radio" name="123"> Tiền Mặt <br>
+                                    </div>
+                                </div>            
+                            </div>
+                            
+                                <br>
+                                
+                                <div class="row">
+                                    <div class="col">
+                                        <button type="button" id="ip_tt" class="btn btn-success form-control" data-dismiss="modal" style="height: 60px; font-size: 20px; font-weight: bold; background-color: red;">Đăng ký mua xe</button>
+                                        <p id="loi_tt">(*)</p>
+                                    </div>
+                                </div>
+                                
+                                </form>
+                            </div>
+                       
+                    </div>
+                </div>
+            </div>
+            <script>
+                $(document).ready(function(){
+            
+                    $("#ip_kh").blur(function(){
+            
+                        let kh = $("#ip_kh").val();
+                        let reg_kh = /(^[A-Z][a-z]+\s)([A-Z][a-z]+\s)*([A-Z][a-z]+)$/;
+            
+                        if(kh == ""){
+                            $("#loi_kh").css("color", "red");
+                            $("#loi_kh").html("Tên khách hàng không được bỏ trống");
+                            $("#ip_kh").focus();
+                        }
+                        else if(!reg_kh.test(kh)){
+                            $("#loi_kh").css("color", "red");
+                            $("#loi_kh").html("Tên khách hàng phải 2 kí tự trở lên kí tự đầu phải viết hoa");
+                            $("#ip_kh").focus();
+                        }
+                        else{
+                            $("#loi_kh").html("");
+                        }
+                    });
+            
+                    $("#ip_dt").blur(function(){
+            
+                        let dt = $("#ip_dt").val();
+                        let reg_dt = /^0\d{9}/;
+            
+                        if(dt == ""){
+                            $("#loi_dt").css("color", "red");
+                            $("#loi_dt").html("SĐT  khách hàng không được bỏ trống");
+                            $("#ip_dt").focus();
+                        }
+                        else if(!reg_dt.test(dt)){
+                            $("#loi_dt").css("color", "red");
+                            $("#loi_dt").html("số điện thoại theo mẫu 0XXXXXXXXX");
+                            $("#ip_dt").focus();
+                        }
+                        else{
+                            $("#loi_dt").html("");
+                        }
+                    });
+            
+                     $("#ip_dc").blur(function(){
+            
+                        let dc = $("#ip_dc").val();
+                       
+            
+                        if(dc == ""){
+                            $("#loi_dc").css("color", "red");
+                            $("#loi_dc").html("Địa chỉ không được bỏ trống");
+                            $("#ip_dc").focus();
+                        }
+                        else{
+                            $("#loi_dc").html("");
+                        }
+                    });
+            
+            
+                    $("#ip_sp").blur(function(){
+            
+                        let sp = $("#ip_sp").val();
+                       
+            
+                        if(sp == ""){
+                            $("#loi_sp").css("color", "red");
+                            $("#loi_sp").html("Tên sản phẩm không được bỏ trống");
+                            $("#ip_sp").focus();
+                        }
+                        else{
+                            $("#loi_sp").html("");
+                        }
+            
+                        
+                    });
+                    $("#ip_nm").blur(function(){
+                 let nm = $("#ip_nm").val();
+                nm = new Date(nm); // Chuyển chuỗi ngày mua thành đối tượng Date
+                let today = new Date();
+                let tuoi = today.getFullYear() - nm.getFullYear();
+            
+                if(nm == ""){
+                    $("#loi_dt").css("color", "red");
+                    $("#loi_nm").html("ngày mua không được bỏ trống");
+                    $("#ip_nm").focus();
+                } else if(nm < today) {
+                    $("#loi_dt").css("color", "red");
+                    $("#loi_nm").html("Ngày mua không được sau ngày hiện tại");
+                    $("#ip_nm").focus();
+                }
+                else {
+                    $("#loi_nm").html("");
+                }
+            });      
+            
+                $("#ip_tt").click(function(){
+                    let kh = $("#ip_kh").val();
+                    let dt = $("#ip_dt").val();
+                    let dc = $("#ip_dc").val();
+                    let lsp = $("#ip_lsp").val();
+                    let sp = $("#ip_sp").val();
+                    let sl = $("#ip_sl").val();
+                    let nm = $("#ip_nm").val();
+                    let tt = $("input[name='123']:checked").val();
+            
+                    if(kh == "" ||dt == "" ||dc == "" ||lsp == "" ||sp == "" ||sl == "" ||nm == "" ||tt == "" ){
+                        
+                        
+                        alert("Không thể đăng ký do điền thiếu thông tin !");
+                        $("#myform")[0].reset();
+                        
+                    }
+                    else{
+                        alert("Thành công !!! Cửa hàng sẽ liên hệ bạn trong 24h");
+                    }
+                    
+                });
+            
+                });
+                function showPaymentForm() {
+            var paymentForm = document.getElementById("myModal");
+            paymentForm.style.display = "block";
+        }
+        function openOverlay(element) {
+            var imageUrl = element.src;
+            document.getElementById("overlayImage").src = imageUrl;
+            document.querySelector(".overlay").style.display = "flex";
+        }
+
+        function closeOverlay() {
+            document.querySelector(".overlay").style.display = "none";
+        }
+    </script>
+            
+       
+    </body>
+</html>

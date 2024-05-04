@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang = "vi" style="height: auto;">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Shop Motorbike</title>
+        <link rel="stylesheet" type="text/css" href="css/suzuki.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <link href="css/all.min.css" rel="stylesheet"> 
+
+        <script>
+            // JavaScript để mở tab kfksfksdks
+            function openTab(evt, tabName) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+              }
+              document.getElementById(tabName).style.display = "block";
+              evt.currentTarget.className += " active";
+            }
+            
+            // Mở tab đầu tiên mặc định
+            document.getElementById("defaultOpen").click();
+            </script>
+            
+    </head>
+    <body>
+        <header style="height: 70px; position: sticky; margin-bottom: 0; padding-bottom: 0;">
+            <div class = "tieude" style="height: 100%; width: 100%;">
+                <div class="khachhang">
+                    <ul>
+                        <li>
+                            <a href="">Các vấn đề thường gặp |</a>
+                        </li>
+                        <li>
+                            <a href="">Góp ý | </a>
+                        </li>
+                        <li>
+                            <a href=""></i>Chăm sóc khách hàng | </a>
+                        </li>
+                        <li>
+                            <a href="">Thành viên | </a>
+                        </li>
+                        <li>
+                            <a href="dangnhap.html">Log in / sign in  <i class="fa fa-user"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class = "logo"> 
+                    <a href=""> <img src="img/motologo.jpg" alt=""></a>
+                    <a href="" ><img src="img/logo_new.png" alt="" style="width: 20% ;"></a>
+                     
+                </div>
+            </div>
+        </header>
+       
+            <nav style="z-index: 10;">
+                <div id = "menu"> 
+                    <ul>
+                        <li>
+                            <a href="index.html">Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="">Danh mục xe</a>
+                            <ul>
+                                <li><a href="suzuki.html">Xe Suzuki</a><img class ="imglogoxe" src="img/suzukilgopng.png" alt=""></li>
+                                <li><a href="yamaha.html">Xe Yamaha <img class ="imglogoxe" src="img/yamahalogo.png" alt=""></a></li>
+                                <li><a href="honda.html">Xe Honda</a> <img  class ="imglogoxe" src="img/hondalogo.png" alt=""></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" style="padding-top: 5px;">Danh mục phụ kiện</a>
+                            <ul >
+                               
+                                <li><a href="">Phụ tùng thay thế</a></li>
+                                <li><a href="nhotxe.html">Nhớt xe máy</a></li>
+                              
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Top bán chạy</a>
+                        </li>
+                        <li><a href="">Tin tức</a>
+                           <ul>
+                              <li><a href="">Dòng xe mới</a></li>
+                              <li><a href="">Động cơ mới</a></li>
+                              <li><a href="">Doanh nghiệp</a></li>
+                           </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <article style="z-index: 0;">
+               
+                    <div class="wrapper2">
+                        
+                        <div class="lifo">
+                            <div class="line"></div>
+                            <div class="info" style="font-family: SuzukiBold,sans-serif;"><p style="color: rgb(0 17 81);">KHÁM PHÁ CÁC DÒNG XE SUZUKI</p></div>
+                        </div>
+                        <div class="tab" style="margin-left: 10px;">
+                            <button class="tablinks" onclick="openTab(event, 'tab1')" id="defaultOpen">Raider</button>
+                            <button class="tablinks" onclick="openTab(event, 'tab2')">V-Strom</button>
+                          </div>
+                          
+                          <div id="tab1" class="tabcontent" style="display: block;">
+                            <div class="menusp">
+                                <ul class="listsp">
+                                    <li>
+                                        <div class="product-item">
+                                            <div class="product-top">
+                                                <a href="chitietsanphamraider.html" class="imgclass"><img src="img/xeraider.png" alt=""></a>
+                                                <a href="chitietsanphamraider.html" class="buynow">Mua ngay</a>
+                                            </div>
+                                            <div class="product-info">
+                                                <a href="" class="product-cat">Suzuki</a>
+                                                <a href="" class="product-name">Raider 100</a>
+                                                <div class="product-price">46,000,000 vnd</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="product-item">
+                                            <div class="product-top">
+                                                <a href="chitiesanphamraider1.html" class="imgclass"><img src="img/xeraider1.png" alt=""></a>
+                                                <a href="chitiesanphamraider1.html" class="buynow">Mua ngay</a>
+                                            </div>
+                                            <div class="product-info">
+                                                <a href="" class="product-cat">Suzuki</a>
+                                                <a href="" class="product-name">Raider D-xmas</a>
+                                                <div class="product-price">47,000,000 vnd</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="product-item">
+                                            <div class="product-top">
+                                                <a href="" class="imgclass"><img src="img/xeraider2.jpg" alt=""></a>
+                                                <a href="" class="buynow">Mua ngay</a>
+                                            </div>
+                                            <div class="product-info">
+                                                <a href="" class="product-cat">Suzuki</a>
+                                                <a href="" class="product-name">Raider Young</a>
+                                                <div class="product-price">48,000,000 vnd</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                          </div>
+                          
+                          <div id="tab2" class="tabcontent">
+                            <div class="menusp">
+                                <ul class="listsp">
+                                    <li>
+                                        <div class="product-item">
+                                            <div class="product-top">
+                                                <a href="chitietsanpham6.html" class="imgclass"><img src="img/xenoibat/xe6.1.jpg" alt=""></a>
+                                                <a href="chitietsanpham6.html" class="buynow">Mua ngay</a>
+                                            </div>
+                                            <div class="product-info">
+                                                <a href="" class="product-cat">Suzuki</a>
+                                                <a href="" class="product-name">V-Strom 250XS</a>
+                                                <div class="product-price">87,939,000vnd</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="product-item">
+                                            <div class="product-top">
+                                                <a href="" class="imgclass"><img src="img/xenoibat/xe7.1.jpeg" alt=""></a>
+                                                <a href="" class="buynow">Mua ngay</a>
+                                            </div>
+                                            <div class="product-info">
+                                                <a href="chitietsanpham7.html" class="product-cat">Suzuki</a>
+                                                <a href="chitietsanpham7.html" class="product-name">V-Strom 275X</a>
+                                                <div class="product-price">97,000,000 vnd</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="product-item">
+                                            <div class="product-top">
+                                                <a href="" class="imgclass"><img src="img/xevtrom1.png" alt=""></a>
+                                                <a href="" class="buynow">Mua ngay</a>
+                                            </div>
+                                            <div class="product-info">
+                                                <a href="" class="product-cat">Suzuki</a>
+                                                <a href="" class="product-name">V-Strom 1000 </a>
+                                                <div class="product-price">100,000,000 vnd</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                          </div>
+                          
+                       
+                      
+                            <div class="lifo2">
+                                <div class="line2" style="background-color: rgb(0 17 81);"></div>
+                                <div class="info2"><p style="color: rgb(0 17 81);">Lịch sử phát triển</p></div>
+                            </div>
+                        </div>
+                        <div class="title2">
+                            <div class="content" style="text-align: justify;
+                            ">
+                                <p >
+                                    Lịch sử phát triển của Suzuki là một hành trình đầy cảm hứng từ những bước đi đầu tiên của Michio Suzuki vào năm 1909. Ban đầu, họ bắt đầu với việc sản xuất dây xích cho ngành công nghiệp dệt may, nhưng sau Chiến tranh Thế giới II, Suzuki đã đổi hướng và bước vào lĩnh vực sản xuất xe máy.
+                                    
+                                    Năm 1952, Suzuki giới thiệu chiếc xe máy đầu tiên của mình, mang tên "Power Free", một bước đột phá trong ngành công nghiệp giao thông cá nhân của Nhật Bản. Sự thành công của mẫu xe này đã mở ra cánh cửa cho Suzuki để mở rộng kinh doanh của mình ra ngoài thị trường nội địa.</p>
+                                <div class="content-img" style="text-align: center;" >
+                                    <img src="img/lssuzuki.jpg" alt="">
+                                    <p style="font-size: 18px; font-style: italic; opacity: calc(80%);">Tập đoàn xe Suzuki</p>
+
+                                </div>
+                            </div>
+                        </div>
+                       
+                     
+                   
+                </section>
+            </article>
+            <footer class="footer">
+                <div class="grid">
+                    <div class="grid_row">
+                        <div class="grid-row2-4">
+                            <h3 class="footer_heading">Thông tin liên hệ</h3>
+                            <ul class="footer_list">
+                                <li class="footer_item">
+                                    <i class="fas fa-envelope"></i>Email: thachthien0912@gmai.com
+                                </li>
+                                <li class="footer-item">
+                                  <i class="fas fa-phone"></i>Hotline: 0345533870
+                                </li>
+                              
+                            </ul>
+                        </div>
+                        <div class="grid-row2-4">
+                            <h3 class="footer_heading">Thông tin liên hệ</h3>
+                            <ul class="footer_list">
+                               <li class="footer_item">
+                                  <i class="fas fa-map-marker-alt"></i>223 Nguyễn Thái Sơn , phường 4 , Gò Vấp , TP-HCM
+                                </li>
+                                <li class="footer-item">
+                                  <i class="fas fa-map-marker-alt"></i>129 Lý Chính Thắng , phường Võ Thị Sáu, Quận 3, TP-HCM 
+                                </li>
+                                <li class="footer-item">
+                                    <i class="fas fa-map-marker-alt"></i>585 Điện Biên Phủ , phường 25, Quận Bình Thạnh, TP-HCM 
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid-row2-4">
+                            <h3 class="footer_heading">Mạng xã hội</h3>
+                            <ul class="footer_list">
+                                <li class="footer_item">
+                                     <a href="https://www.facebook.com/282gaming/" class="footer_item_link">
+                                        <i class="fab fa-facebook-f"></i>
+                                        Facebook</a>
+                                    </li>
+                                    <li class="footer-item">
+                                     <a href="https://www.tiktok.com/vi-VN/" class="footer_item_link"><i class="fab fa-tiktok"></i>Tiktok</a>
+                                </li>
+                                <li class="footer-item">
+                                     <a href="" class="footer_item_link"><i class="fab fa-telegram-plane"></i>Telegram </a>
+                                </li>
+                             </ul>
+                        </div>
+                        <div class="grid-row2-4">
+                            <h3 class="footer_heading">Theo dõi</h3>
+                            <ul class="footer_list">
+                                <li class="footer_item">
+                                    <i class="fas fa-box-open"></i><a href="" class="footer_item_link">Đơn hàng</a>
+                                </li>
+                                <li class="footer-item">
+                                     <a href="" class="footer_item_link"><i class="fas fa-archive"></i>Sản phẩm mới</a>
+                                </li>
+                             </ul>
+                        </div>
+                        <div class="grid-row2-4">
+                            <h3 class="footer_heading">Lái xe an toàn</h3>
+                            <ul class="footer_list">
+                                <li class="footer_item">
+                                     <a href="" class="footer_item_link"><i class="fas fa-bookmark"></i>Hướng dẫn lái xe an toàn</a>
+                                </li>
+                                <li class="footer-item">
+                                     <a href="" class="footer_item_link">Phụ kiện hỗ trợ</a>
+
+                                </li>
+                             </ul>
+                        </div>
+                    </div>
+                    <div class="grid_row2">
+                        <div class="footer_rowlast">
+                            <p class="footer_last">Chịu Trách Nhiệm Quản Lý Nội Dung: Lê Bảo Kiện - Điện thoại liên hệ: 0345533870 </p>
+                        </div>
+                        <div class="footer_rowlast">
+                        <p class="footer_last">   Mã số doanh nghiệp: 22698751 do Sở Kế hoạch & Đầu tư TP Hồ Chí Minh cấp lần đầu ngày 10/02/2024</p>
+                    </div>
+                    <div class="footer_rowlast">
+                        <p class="footer_last">© 2024 - Bản quyền thuộc về Công ty BKey</p>
+                    </div>
+                    
+                    </div>
+                </div>
+            </footer>
+            
+    </body>
+</html>
